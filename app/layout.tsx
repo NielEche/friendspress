@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-declare module "*.css";
 import { Fraunces, Source_Serif_4, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
