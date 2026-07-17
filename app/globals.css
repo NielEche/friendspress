@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F3EEE2;
+  color: #211D17;
+}
+
+::selection {
+  background: #B08C3E;
+  color: #F3EEE2;
+}
+
+.small-caps {
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+}
+
+.drop-cap::first-letter {
+  font-family: var(--font-display), serif;
+  float: left;
+  font-size: 4.2rem;
+  line-height: 0.82;
+  padding-right: 0.35rem;
+  padding-top: 0.1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
